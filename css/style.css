@@ -38,6 +38,11 @@ body {
     opacity: 0.8;
 }
 
+.pic {
+    height: 20em;
+    width: 79.5em;
+    padding: 17.5em 0 0 1em;
+}
 @media (max-width: 1440px) {
     .menu-widget {
         margin: 13.5em 2.5em;

@@ -11,17 +11,18 @@
 </head>
 <body>
 <main id="contentBody" class="page-main">
-    <section class="content-container">
-
+    <section id="contentSection" class="content-container">
+       <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1598px-F1.svg.png">
     </section>
     <section class="menu">
         <nav class="menu-navigation">
             <a onclick="showContent('index.html')" class="menu-navigation__button">главная</a>
             <a onclick="showContent('pages/about.html')" class="menu-navigation__button">правила</a>
-            <a onclick="showContent('pages/releases.html')" class="menu-navigation__button">дрифт на время!</a>
+            <a onclick="showPagesContent('pages/game.html')" class="menu-navigation__button">дрифт на время!</a>
         </nav>
     </section>
 </main>
 <script type="text/javascript" src="../js/spa.js"></script>
+<script type="text/javascript" src="../js/spa-pages.js"></script>
 </body>
 </html>
