@@ -7,6 +7,12 @@
     font-family: "Poiret One",Helvetica,sans-serif;
 }
 
+.content-container {
+    margin: 2em 0 0 2em;
+    width: 82.5em;
+    height: 57em;
+}
+
 @media (max-width: 1440px) {
     .content-title {
         padding: 0.5em 0 1.5em 0;

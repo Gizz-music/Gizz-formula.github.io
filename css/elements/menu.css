@@ -14,8 +14,8 @@
     display: flex;
     flex-flow: column;
     align-items: left;
-    height: 100%;
-    padding: 15em 0 3em 90em;
+    height: 50%;
+    padding: 15em 10em 0 5.5em;
 }
 
 @media (max-width: 1440px) {

@@ -3,7 +3,6 @@
 @import "./pages/releases.css";
 @import "./pages/news.css";
 @import "elements/colors.css";
-@import "elements/header.css";
 @import "elements/menu.css";
 @import "elements/buttons.css";
 @import "elements/content-title.css";
@@ -19,6 +18,13 @@ body {
     max-width: 1920px;
     min-width: 320px;
     width: 100%;
+}
+
+.page-main {
+    max-width: 1920px;
+    min-width: 320px;
+    width: 100%;
+    display: flex;
 }
 
 .menu-widget {
