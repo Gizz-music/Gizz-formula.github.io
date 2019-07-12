@@ -43,6 +43,25 @@ body {
     width: 79.5em;
     padding: 17.5em 0 0 1em;
 }
+
+.pic {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 6000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 6000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
 @media (max-width: 1440px) {
     .menu-widget {
         margin: 13.5em 2.5em;

@@ -265,7 +265,7 @@ function map (traceMap) {
     };
 
     function drawBackground (canvas) {
-        canvas.fillStyle = "rgba(0, 0, 0, .70)";
+        canvas.fillStyle = "rgba(0, 0, 0, .0)";
         canvas.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
     }
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+        <title>RACING DAY</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/icon.png" type="image/png">
+        <script type="text/javascript" src="JS.js"></script>
+    </head>
+    <body onKeyDown="keyDown(event.keyCode)" onKeyUp="keyUp(event.keyCode)">
+    <main id="contentBody" class="page-main">
+        <section class="content-container">
+        <canvas height="900" width="1300" id="canvas" onClick="mouseClick(event)" onBlur="blur()"></canvas>
+        </section>
+        <section class="menu">
+            <nav class="menu-navigation">
+                <a onclick="showContent('index.html')" class="menu-navigation__button">главная</a>
+                <a onclick="showContent('regulation.html')" class="menu-navigation__button">правила</a>
+                <a onclick="showContent('game.html')" class="menu-navigation__button">дрифт на время!</a>
+            </nav>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/spa.js"></script>
+    </body>
+</html>
