@@ -270,7 +270,7 @@ function map (traceMap) {
     }
 
     function drawBorder(canvas) {
-        canvas.fillStyle = "#779dff";
+        canvas.fillStyle = "#10acd2";
         drawPath(canvas, 10)
     }
 
@@ -293,7 +293,7 @@ function map (traceMap) {
     }
 
     function drawDemarcation(canvas) {
-        canvas.fillStyle = "#779dff";
+        canvas.fillStyle = "#10acd2";
         var residue = 0;
         for (var i = 0; i < trace.length; i++) {
             canvas.save();
@@ -430,7 +430,7 @@ function panel (statisticSet, canvas) {
     function drawBorder () {
         canvas.beginPath();
         canvas.lineWidth = 10;
-        canvas.strokeStyle = "#779dff";
+        canvas.strokeStyle = "#10acd2";
         canvas.moveTo(0, 0);
         canvas.lineTo(0, canvasHeight);
         canvas.stroke();
@@ -541,21 +541,21 @@ function panel (statisticSet, canvas) {
     }
 // Текст в кнопке СТАРТ!
     function newGame() {
-        canvas.fillStyle ="#6577c0";
+        canvas.fillStyle ="#10acd2";
         canvas.fillRect(32, 447, 136, 46);
         canvas.fillStyle ="#bbb";
         canvas.fillRect(35, 450, 130, 40);
-        canvas.fillStyle ="#6577c0";
+        canvas.fillStyle ="#10acd2";
         canvas.font = "20pt Arial";
         canvas.fillText("AGAIN", 50, 480);
     }
 
     function pauseView () {
-        canvas.fillStyle ="#6577c0";
+        canvas.fillStyle ="#10acd2";
         canvas.fillRect(32, 527, 136, 46);
         canvas.fillStyle ="#bbb";
         canvas.fillRect(35, 530, 130, 40);
-        canvas.fillStyle ="#6577c0";
+        canvas.fillStyle ="#10acd2";
         canvas.font = "20pt Arial";
         canvas.fillText(pauseLabel, 40, 560);
     }
@@ -634,11 +634,13 @@ function startButton () {
     addButton(start, size, action);
 }
 
+//ГОНКА!!!
+
 CANVAS_WIDTH = 1300;
 CANVAS_HEIGHT = 900;
 
-imagesNumber = 6;
-laps = 1;
+imagesNumber = 2;
+laps = 2;
 
 var startTime = null;
 var userDriverSet = [];
@@ -667,32 +669,6 @@ window.onload = function() {
         i++;
         downloadCheck(i);
     };
-    carImgDemage = new Image;
-    carImgDemage.src = '../imgs/blue_car1_demage.gif';
-    carImgDemage.onload = function () {
-        i++;
-        downloadCheck(i);
-    };
-    traceMap = new Image;
-    traceMap.src = '../imgs/Vroom_SS.jpg';
-    traceMap.onload = function () {
-        i++;
-        downloadCheck(i);
-    };
-
-    explosion = new Image;
-    explosion.src = '../imgs/EXPLOSION.bmp';
-    explosion.onload = function () {
-        i++;
-        downloadCheck(i);
-    };
-
-    treeImg = new Image;
-    treeImg.src = '../imgs/tree.gif';
-    treeImg.onload = function () {
-        i++;
-        downloadCheck(i);
-    }
 };
 
 function downloadCheck(i) {
@@ -752,6 +728,10 @@ function update () {
     for (var i in bang) {
         bang[i].update();
     }
+}
+
+function gameChangePause () {
+    pause = !pause;
 }
 
 function gameOver(carId) {
