@@ -656,39 +656,39 @@ carImg = [];
 window.onload = function() {
     var i = 0;
     carImg[0] = new Image;
-    carImg[0].src = 'imgs/ferrari.gif';
+    carImg[0].src = '../imgs/ferrari.gif';
     carImg[0].onload = function () {
         i++;
         downloadCheck(i);
     };
     carImg[1] = new Image;
-    carImg[1].src = 'imgs/red_bull.gif';
+    carImg[1].src = '../imgs/red_bull.gif';
     carImg[1].onload = function () {
         i++;
         downloadCheck(i);
     };
     carImgDemage = new Image;
-    carImgDemage.src = 'imgs/blue_car1_demage.gif';
+    carImgDemage.src = '../imgs/blue_car1_demage.gif';
     carImgDemage.onload = function () {
         i++;
         downloadCheck(i);
     };
     traceMap = new Image;
-    traceMap.src = 'imgs/Vroom_SS.jpg';
+    traceMap.src = '../imgs/Vroom_SS.jpg';
     traceMap.onload = function () {
         i++;
         downloadCheck(i);
     };
 
     explosion = new Image;
-    explosion.src = 'imgs/EXPLOSION.bmp';
+    explosion.src = '../imgs/EXPLOSION.bmp';
     explosion.onload = function () {
         i++;
         downloadCheck(i);
     };
 
     treeImg = new Image;
-    treeImg.src = 'imgs/tree.gif';
+    treeImg.src = '../imgs/tree.gif';
     treeImg.onload = function () {
         i++;
         downloadCheck(i);
