@@ -7,14 +7,48 @@
     font-family: "Poiret One",Helvetica,sans-serif;
 }
 
+@media (max-width: 1440px) {
+    .content-title {
+        padding: 0.5em 0 1.5em 0;
+    }
+}
+
 .content-container {
     margin: 2em 0 0 2em;
     width: 82.5em;
     height: 56.2em;
 }
 
-@media (max-width: 1440px) {
-    .content-title {
-        padding: 0.5em 0 1.5em 0;
+@media (max-width: 1800px) {
+    .content-container{
+        margin: 4em 0 0 2em;
+        width: 72.5em;
+        height: 46.2em;
     }
 }
+
+@media (max-width: 1500px) {
+    .content-container{
+        margin: 5em 0 0 2em;
+        width: 72.5em;
+        height: 46.2em;
+    }
+}
+
+@media (max-width: 1300px) {
+    .content-container{
+        margin: 6em 0 0 2em;
+        width: 52.5em;
+        height: 40.2em;
+    }
+}
+
+@media (max-width: 1300px) {
+    .content-container{
+        display: none;
+        margin: 7em 0 0 2em;
+        width: 52.5em;
+        height: 36.2em;
+    }
+}
+

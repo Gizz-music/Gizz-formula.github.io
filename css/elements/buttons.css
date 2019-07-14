@@ -35,6 +35,24 @@
     padding: 5em 0 5em 75em;
 }
 
+@media (max-width: 1800px) {
+    .button-start {
+        padding: 5em 0 5em 55em;;
+    }
+}
+
+@media (max-width: 1300px) {
+    .button-start {
+        padding: 5em 0 5em 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .button-start {
+        padding: 7.5em 0 5em 0;;
+    }
+}
+
 .button-start {
     display: flex;
     align-items: center;

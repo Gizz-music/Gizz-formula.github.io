@@ -1,3 +1,5 @@
+"use-strict";
+
 function car (position, direction) {
 
 // Переменные настройки параметров физики заноса и управления тачками!
