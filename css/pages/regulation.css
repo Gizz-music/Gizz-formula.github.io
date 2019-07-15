@@ -1,0 +1,26 @@
+.content-container {
+    background: var(--rgba-black);
+}
+
+.content__stuff-text {
+    font-size: 2rem;
+    padding: 2em 5em 3em 5em;
+    text-transform: uppercase;
+    font-family: "Century Gothic",Helvetica,sans-serif;
+    color: var(--white);
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .content__stuff-text {
+        font-size: 1rem;
+        padding: 2em 2em 3em 2em;
+    }
+}
+
+
+
+
+
+
